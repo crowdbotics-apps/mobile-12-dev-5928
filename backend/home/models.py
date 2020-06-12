@@ -18,6 +18,9 @@ class CustomText(models.Model):
         blank=True,
         related_name="customtext_hghghghghghhghghmm",
     )
+    hgfjhgfjgjgwwwwwwwqq = models.ManyToManyField(
+        "home.CustomText", blank=True, related_name="customtext_hgfjhgfjgjgwwwwwwwqq",
+    )
 
     def __str__(self):
         return self.title
