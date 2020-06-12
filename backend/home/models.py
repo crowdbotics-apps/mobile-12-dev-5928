@@ -21,6 +21,13 @@ class CustomText(models.Model):
     hgfjhgfjgjgwwwwwwwqq = models.ManyToManyField(
         "home.CustomText", blank=True, related_name="customtext_hgfjhgfjgjgwwwwwwwqq",
     )
+    ghmgfhguuuuuuuuwww = models.OneToOneField(
+        "home.CustomText",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_ghmgfhguuuuuuuuwww",
+    )
 
     def __str__(self):
         return self.title

@@ -6,13 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0003_auto_20200612_0821'),
+        ("home", "0003_auto_20200612_0821"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customtext',
-            name='hgfjhgfjgjgwwwwwwwqq',
-            field=models.ManyToManyField(blank=True, related_name='customtext_hgfjhgfjgjgwwwwwwwqq', to='home.CustomText'),
+            model_name="customtext",
+            name="hgfjhgfjgjgwwwwwwwqq",
+            field=models.ManyToManyField(
+                blank=True,
+                related_name="customtext_hgfjhgfjgjgwwwwwwwqq",
+                to="home.CustomText",
+            ),
         ),
     ]
